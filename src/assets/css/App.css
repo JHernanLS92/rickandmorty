@@ -1,0 +1,83 @@
+.containerApp{
+    min-width: 200px;
+    max-width: 200px;
+    margin: 1rem auto;
+}
+.containerApp>img{
+    box-shadow: 0px 0px 25px 13px  yellowgreen;
+    background-color: yellowgreen;
+    border-radius: 40px;
+    margin-bottom: -30px;
+}
+.containerHead{
+    width: 100%;
+    margin: 1rem auto;
+}
+.detailsLocation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.characters{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 210px;
+}
+.card{
+    background-color: rgba(60, 130, 114, 0.8) ;
+    border-radius: 25px;
+    margin: 2rem auto;
+    padding: .3rem .8rem; 
+    text-align: start;
+    position: relative;
+    box-shadow: 0px 0px 30px 6px #114A5C;
+    /* background-image: url('../img/fondocard.jpg'); */
+    background-size: cover;
+    color: whitesmoke;
+    height: 350px;
+}
+.imgContainer{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.card>img{
+    width: 200px;
+}
+.status{
+    position: absolute;
+    font-size: 12px;
+    background-color: rgb(45, 44, 44);
+    top: 25px;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+    opacity: .8;
+    padding: .2rem .3rem 0 0;
+}
+
+@media screen and (min-width: 500px) {
+    .containerApp{
+        max-width: 500px;
+    }
+    .location{
+        font-size: 25px;
+        width: 100%;
+    }
+    .detailsLocation{
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+    .card{
+        text-align: start;
+        width: 230px;
+    }
+
+}
+@media screen and (min-width: 800px) {
+    .containerApp{
+        max-width: 760px;
+    }
+   
+}
