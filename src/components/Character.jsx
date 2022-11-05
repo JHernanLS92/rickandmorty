@@ -25,7 +25,8 @@ const Character = ({ character }) => {
                 <p><b>Status: </b>  {characterITem.status}  <i className="fa-solid fa-circle" style={{ color: "yellow" }}></i> </p>
             )
         }
-    }
+    } 
+    console.log ( characterITem.type );
     return (
         <div className='Character'>
             <div className='card'>
@@ -43,7 +44,6 @@ const Character = ({ character }) => {
                             { getStatus(  characterITem.status )}
                         </div>
                         <p><b>Specie: </b> {characterITem.species}</p>
-                        <p><b>Type: </b>{characterITem.type}</p>
                         <p><b>Gender: </b>  {characterITem.gender}</p>
                         <p><b>Episode: </b>  {characterITem.episode?.length}</p>
                     </div>
