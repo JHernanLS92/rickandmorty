@@ -6,14 +6,16 @@ import tittle from '../assets/img/tittle.png'
 
 const Container = ({ typeId, setTypeId, serchType, location }) => {
    
+    
     return (
 
         <div className='containerApp'>
              <img src={tittle} alt="" />
             <div className='containerHead'>
                 <b>Buscar : </b><br />
-                <input type="text" value={typeId} onChange={e => setTypeId(e.target.value)} placeholder="Busca el personaje"/>
+                <input type="text" value={typeId} onChange={e => setTypeId(e.target.value)} placeholder="Serch by Id Location"/>
                 <button onClick={serchType}> <i className="fa-solid fa-magnifying-glass"></i> </button>
+                <p>{typeId}</p>
             </div>
 
             <div className='containerLocation'>
